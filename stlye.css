@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+video{
+    width: 100%;
+}
+
+/* header section  */
+
+header{
+    box-shadow:rgba(0, 0, 0, 0.4);
+    height: 4.5rem;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: transparent;
+    
+}
+
+.container {
+    width: min(90%,  1120px);
+    margin-inline: auto;
+}
+
+.hamburger{
+    display: none;
+}
+
+.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.title .one {
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.title .two {
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(237, 86, 59);
+    transition: 0.3s;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-link{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-link li{
+    list-style: none;
+}
+
+.menu-link li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: rgb(237, 89, 59);
+    color: rgb(255, 255, 255);
+    padding: 0.75rem  1.25rem;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.btn-primary:hover{
+    background-color: rgba(255, 255, 255);
+    color: rgb(237, 89, 59);
+    cursor: pointer;
+}
+
+/* <!-- 3 mobile-menu --> */
+
+.mobile {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+/* <!-- 4 easy with our gym --> */
+
+.hero{
+    height: 40rem;
+    display: flex;
+    position:relative;
+}
+
+.video-tag {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color:rgba(35, 45, 57, 0.8);
+
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hero h5 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 0.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 0.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero h1 em{
+    font-style: normal;
+    color: #ed563b;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+/* <!-- 5 Choose Program --> */
+
+.choose-program{
+    display: flex;
+    height: 45rem;
+    margin-top: 5rem;
+}
+
+.choose-program .container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+}
+
+.choose-program .container .first {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 0.5px;
+    color:#232d39;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.first h3 em {
+    font-style: normal;
+    color: #ed563b;
+    font-weight: 800;
+    padding: 0 10px;
+}
+
+.first img {
+    width: 2.8125rem;
+    height: 0.9375rem;
+    margin: 1.25rem   auto;
+}
+
+.first p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+.choose-program .container .second{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 2rem;
+}
+
+.second .boxs{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 33.75rem;
+    height: 6.737;
+}
+
+.second .boxs img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.boxs .info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-box h4{
+    font-size: 1.1875rem;
+    font-weight: 600;
+    line-height: 0.25px;
+    color:#232d39;
+    text-transform:capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+    color:#7a7a7a;
+}
+.info-box p em{
+    font-style: normal;
+    color: rgb(63, 63, 245);
+    font-weight: 800;
+    padding: 0 10px;
+}
+
+.info-box a{
+    text-decoration: none;
+    color: #ed563b;
+}
+
+/* <!-- 6 Become a member --> */
+
+.hero-two{
+    display: flex;
+    background:url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg)center / cover no-repeat;
+    height: 25rem;
+    margin-bottom: 5rem;
+}
+
+.hero-two .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.hero-two h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 0.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-two h2 em{
+    font-style: normal;
+    color: #ed563b;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.hero-two p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* <!-- 7 Our Classes --> */
+
+.choose-program .container .third{
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    gap: 2rem;
+    
+}
+
+.third .box-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1),
+                4px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px 16px;
+    margin-bottom: 2rem;
+
+}
+
+.third .box-info li{
+    list-style: none;
+}
+.third .box-info a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box-info h1{
+    font-size: 1.1875rem;
+    font-weight: 600;
+    line-height: 0.5px;
+    color: #000;
+    text-transform: capitalize;
+}
+.box-info h1:hover{
+    color: #ed563b;
+}
+
+
+.third .box-info img{
+    width: 2.1875rem;
+    height: 2.1875rem;
+
+}
+
+
+.box-info1 a {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: rgb(237, 86, 59);
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.box-info1 a:hover{
+    background-color: #f17863;
+}
+
+.box-three{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 32.7715rem;
+}
+
+.box-three img{
+    width: 43.75rem;
+    height: 18.5625rem;
+    margin-bottom: 1rem;
+}
+
+.box-three h4{
+    font-size: 1.4375rem;
+    font-weight: 700;
+    color: rgb(35, 45, 57);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.8rem;
+    margin-top: 1.875;
+}
+
+.box-three p{
+    font-size: 0.875rem;
+    color: rgb(122, 122, 122);
+    margin-bottom: 1.75rem;
+}
+
+.box-three a{
+    display: inline-block;
+    font-size: 15px;
+    background-color: rgb(237, 86, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+#image-02, #image-03, #image-04{
+    display: none;
+}
+
+.hero-three{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* <!-- 8 Classes Schedule  */
+
+.hero-three{
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg) center / cover no-repeat;
+    height: 57.74rem;
+}
+
+.hero-three .sawir img {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.hero-three h3{
+    color: #fff;
+}
+
+.hero-three .Schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Schedule .days ul {
+    display: flex;
+}
+
+.days li{
+    list-style:none;
+}
+
+.days a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 6px;
+    transition: color 0.3s ease;
+}
+
+.days a:hover{
+    color: #f17863;
+}
+
+.days span{
+    color: #fff;
+    margin: 0 4px;
+}
+
+.table-days table{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.table-days table tr td{
+    border:1px solid #fff;
+    height: 100px;
+    width: 200px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+/* <!-- 9 Expert Trainers --> */
+
+.expert-trainers .expert-two{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.expert-two .info-expert{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1),
+                4px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px 40px;
+    margin-bottom: 2rem;
+}
+
+.info-expert span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ed563b;
+    display: inline-block;
+    margin-top: 25px; 
+}
+
+.info-expert h4{
+    font-size: 19px;
+    font-weight:600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+
+}
+
+.info-expert p{
+    font-size: 14px;
+    font-weight:400;
+    margin-bottom: 18px;
+
+}
+
+.info-expert li{
+    list-style: none;
+}
+
+.info-expert ul i{
+    color: black;
+}
+
+.info-expert ul i:hover{
+    color: #ed563b;
+}
+
+.social-media{
+    display: flex;
+    gap: 1rem;
+}
+
+/* <!-- 10 map and contect --> */
+
+.map-contact{
+    display: flex;
+    margin-top: 10rem;
+    gap: 0.1rem;
+}
+
+.map-contact .contact{
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg) center / cover no-repeat;
+    width: 1999px;
+    height: 530px;
+}
+
+.contact .info-contact{
+    width: min(80%,  1999px);
+    margin-inline: auto;
+    background-color: #fff;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.name-email form{
+    display: flex;
+    gap: 1rem;
+}
+
+.name-email form input {
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    line-height: 40px;
+    padding: 0px 10px;
+    margin-bottom: 2rem;
+}
+
+.subject form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.subject form input{
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    line-height: 40px;
+    padding: 0px 10px;
+}
+
+.subject form textarea {
+    overflow: auto;
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    line-height: 40px;
+    padding: 0px 10px;
+    height: 150px;
+}
+
+footer p{
+    text-align: center;
+    color: #232d39;
+    font-size: 13px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer p a{
+    color: #ed563b;
+    text-decoration: none;
+}
+
+
+/* for tablet and mobile 768px  */
+
+@media(max-width: 768px){
+    
+
+    .desktop-menu{
+        display: none;
+    }
+    header{
+        position:sticky;
+        background-color: #F7F7F7;
+        height: 5rem;
+        width: 48rem;
+        
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+        width: 48rem;
+    }
+
+    .mobile .title h1{
+        font-size: 32px;
+        font-weight: 800;
+        color: #000;
+        text-align: center;
+    }
+
+    .mobile .title h1 em {
+        font-style: normal;
+        color: #ed563b;
+        font-weight: 900;
+        padding: 0 10px;
+    }
+
+    .mobile-menu {
+        display: none; 
+        background-color: #fff;
+        position: absolute;
+        top: 80px; 
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+       
+    }
+
+    .mobile-menu ul li {
+        list-style: none; 
+    }
+
+    .mobile-menu ul li a {
+        text-decoration: none;
+    }
+
+    .mobile-menu ul li a:hover {
+        color: #ed563b;
+    }
+
+    .mobile-box{
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1),
+                    4px 8px 16px rgba(0, 0, 0, 0.1);
+        margin: 0 0.2rem  1rem 1rem;
+    }
+
+    .mobile-box:hover{
+        background-color: #7a7a7a;
+    }
+
+    .mobile-menu button {
+        padding: 10px 345px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1),
+                    4px 8px 16px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        background-color: #ed563b;
+        color: #fff;
+    }
+
+    .mobile-menu button:hover{
+        background-color: #ddd;
+        color: #ed563b;
+        cursor: pointer;
+    }
+
+    .hero{
+        top: -13rem;
+        width: 48rem;
+        /* height: 40rem; */
+    }
+
+    .choose-program{
+        display: flex;
+        flex-direction: column;
+        width: 48rem;
+        height: auto;
+        margin-bottom: 5rem;
+        
+    }
+
+    .choose-program .container{
+        /* margin-left: -1rem; */
+        margin-right: 4rem;
+    }
+    
+    .choose-program .contact .first{
+        width: 100%;
+    }
+
+    .choose-program .container .second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* gap: 2rem; */
+    }
+
+    .choose-program .container .second .boxs{
+        flex: 1 1 100%;
+        background: #fff;
+        box-sizing: border-box;
+    }
+
+    .second .boxs img {
+        max-width: 80px;
+        height: auto;
+
+    }
+
+    .second .boxs .info-box{
+        text-align:start;
+        gap: 0.1rem;
+    }
+
+    .boxs .info-box h4{
+        font-size: 1rem;
+    }
+    .boxs .info-box p{
+        font-size: 0.75rem;
+    }
+    .boxs .info-box a{
+        font-size: 0.75rem;
+    }
+
+    .hero-two{
+        width: 48rem;
+        height: 15rem;
+        
+    }
+
+    .hero-two .container{
+        display: flex;
+    }
+    .hero-two h2{
+        font-size: 2rem;
+    }
+
+    .hero-two p{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .hero-two bottom:{
+        font-size: 1rem;
+
+    }
+
+    .choose-program .container .third{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .third .box-three img{
+        max-width: 100%;
+
+    }
+    .third .box-three{
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+
+    }
+
+    .hero-three{
+        height: 57.74rem;
+        margin-right: 2rem;
+
+    }
+
+    .hero-three .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 48rem;
+        margin-right: 2rem;
+        
+    }
+
+    .Schedule {
+        width: 100%;
+        /* margin-right: 100%; */
+        
+    }
+
+    .days ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .days ul li {
+        margin: 5px 10px;
+        display: inline-block;
+    }
+
+    .table-days table {
+        width: 700px; 
+        border-collapse: collapse;
+    }
+
+    .table-days td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .first.sawir p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .first.sawir h3 {
+        font-size: 22px;
+    }
+
+    .expert-trainers .container{
+        width: 48rem;
+        display: flex;
+        padding: 0  2rem;
+
+    }
+
+    .expert-trainers .container .expert-two{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+    }
+
+    .map-contact{
+        display: flex;
+        flex-direction: column;
+        width: 48rem;
+
+    }
+
+    .map iframe{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .map-contact .contact{
+        width: 100%;
+    }
+
+    footer{
+        width: 48rem;
+    }
+        
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+
+}
+
+
