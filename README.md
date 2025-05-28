@@ -8,4 +8,9 @@ Waxaan bartay:
 
 mahadsanidiin dhamaantin Ustaad Hamuuda , Eng juweyriyo , Eng idiriz iyo Eng sharafdiin 
 
-last but not least Team support thanks All of you 
+Finally yet importantly, Team support thanks all of you
+
+final project (GYM Project)
+https://final-project-five-lake.vercel.app/
+
+https://github.com/mohageesdiir/final-project
